@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.15;
 
-import "./overmint.sol";
+import "./Overmint.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 
 contract Attack is IERC721Receiver{
