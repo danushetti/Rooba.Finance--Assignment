@@ -35,8 +35,8 @@ contract Main{
          }
      }
  
-     function success() external view returns(uint256 minted_NFTs, uint256 attackers_NFT){
-         return (overmint.totalSupply(), overmint.balanceOf(msg.sender));
+     function success() external view returns(bool){
+         return (overmint.totalSupply() == 5 && overmint.balanceOf(msg.sender) == 5);
      }
  }
  
