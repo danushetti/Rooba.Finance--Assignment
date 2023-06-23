@@ -27,8 +27,8 @@ contract Main{
      
      Overmint public overmint;
  
-     constructor(){
-        overmint = new Overmint();
+     constructor(Overmint instance){
+        overmint = instance;
         
         for (uint256 i=1; i<=5; i++){
          new Attack(overmint, msg.sender,i);
